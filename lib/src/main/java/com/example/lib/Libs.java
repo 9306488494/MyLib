@@ -41,10 +41,5 @@ public class Libs {
         return IMEI;
     }
 
-    // read more
-    public void ReadMore(TextView txtView, String data, String noOfDigit) {
-        txtView.setText(data.substring(0, Integer.parseInt(noOfDigit)));
-    }
-
 
 }
