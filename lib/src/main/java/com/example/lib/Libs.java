@@ -6,6 +6,7 @@ import android.content.pm.PackageManager;
 import android.os.Build;
 import android.support.v4.app.ActivityCompat;
 import android.telephony.TelephonyManager;
+import android.widget.TextView;
 
 import static android.content.Context.TELEPHONY_SERVICE;
 
@@ -39,4 +40,11 @@ public class Libs {
         }
         return IMEI;
     }
+
+    // read more
+    public void ReadMore(TextView txtView, String data, String noOfDigit) {
+        txtView.setText(data.substring(0, Integer.parseInt(noOfDigit)));
+    }
+
+
 }
